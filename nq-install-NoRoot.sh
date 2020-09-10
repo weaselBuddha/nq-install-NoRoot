@@ -64,6 +64,7 @@ mkdir ~/nodequery
 # Download agent
 echo -e "|   Downloading nq-agent.sh to ~/nodequery\n|\n|   + $(wget -nv -o /dev/stdout -O ~/nodequery/nq-agent.sh --no-check-certificate https://raw.github.com/nodequery/nq-agent/master/nq-agent.sh)"
 
+# Change Absolute Path to Relative in Agent
 sed -i "s./etc.\~." ~/nodequery/nq-agent.sh
 
 if [ -f ~/nodequery/nq-agent.sh ]
