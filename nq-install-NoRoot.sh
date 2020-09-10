@@ -43,6 +43,8 @@ then
 
         # Confirm cron service
         echo "Cron is available but not running. Exiting."
+        
+        exit 1
 
 fi
 
